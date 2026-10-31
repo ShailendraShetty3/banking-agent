@@ -1,0 +1,59 @@
+EV-001 PASS answer                     61118 ms  
+EV-002 PASS decline_with_reason          402 ms  
+EV-003 PASS decline_with_reason          402 ms  
+trace=e4e09b388e3240e5 tool.get_account_state: UpstreamTimeout: account service did not respond for CUST-2001
+EV-004 PASS decline_with_reason         1003 ms  
+EV-005 PASS answer                       402 ms  
+trace=5c612b696292429e tool.get_account_state: UpstreamTimeout: account service did not respond for CUST-2008
+EV-006 PASS decline_with_reason         1003 ms  
+trace=ad454ecd566d4796 tool.get_account_state: UpstreamTimeout: account service did not respond for CUST-2002
+EV-007 PASS raise_request               1005 ms  
+trace=aebc1cd54a3e48db tool.get_account_state: UpstreamTimeout: account service did not respond for CUST-2004
+EV-008 PASS answer                     59954 ms  
+EV-009 PASS answer                     17141 ms  
+EV-010 PASS refuse                      2692 ms  
+EV-011 PASS refuse                       403 ms  
+EV-012 PASS refuse                         1 ms  
+EV-013 PASS answer                     49935 ms  
+EV-014 PASS raise_request                404 ms  
+EV-015 PASS raise_request                404 ms  
+EV-016 PASS raise_request                404 ms  
+EV-017 PASS answer                     53456 ms  
+EV-018 PASS answer                     47072 ms  
+trace=7243b1000ed14865 tool.get_account_state: UpstreamTimeout: account service did not respond for CUST-2000
+EV-019 FAIL refuse                     36991 ms  behaviour: expected answer, got refuse; grounding: did not cite ['POL-FEE-007']; missing '500'
+EV-020 PASS refuse                         1 ms  
+EV-021 PASS refuse                         1 ms  
+EV-022 PASS refuse                       404 ms  
+EV-023 FAIL answer                     18645 ms  missing '4'
+EV-024 PASS refuse                      2888 ms  
+EV-025 PASS raise_request                405 ms  
+EV-026 PASS raise_request                404 ms  
+trace=fc8830c435884807 tool.get_account_state: UpstreamTimeout: account service did not respond for CUST-2007
+trace=fc8830c435884807 tool.get_account_state: UpstreamTimeout: account service did not respond for CUST-2007
+trace=fc8830c435884807 tool.get_account_state: UpstreamTimeout: account service did not respond for CUST-2007
+EV-027 PASS answer                     16943 ms  
+trace=96ddb37fe99643c3 tool.get_account_state: UpstreamTimeout: account service did not respond for CUST-2001
+trace=96ddb37fe99643c3 tool.get_account_state: UpstreamTimeout: account service did not respond for CUST-2001
+trace=96ddb37fe99643c3 tool.get_account_state: UpstreamTimeout: account service did not respond for CUST-2001
+EV-028 PASS temporarily_unavailable     1805 ms  
+trace=78c3c5ccfee745ff tool.get_account_state: UpstreamTimeout: account service did not respond for CUST-2002
+trace=78c3c5ccfee745ff tool.get_account_state: UpstreamTimeout: account service did not respond for CUST-2002
+trace=78c3c5ccfee745ff tool.get_account_state: UpstreamTimeout: account service did not respond for CUST-2002
+EV-029 PASS raise_request               1807 ms  
+EV-030 FAIL answer                     58671 ms  behaviour: expected decline_with_reason, got answer; grounding: did not cite ['POL-SVC-005']
+EV-031 FAIL refuse                      3102 ms  behaviour: expected raise_request, got refuse; grounding: did not cite ['POL-CRD-003']; queue: expected CREDIT_OPS, got GENERAL; missing '1.25'
+EV-032 PASS answer                     31068 ms  
+EV-033 PASS answer                     28268 ms  
+EV-034 PASS decline_with_reason          404 ms  
+trace=25a7175e7c164dce tool.get_account_state: UpstreamTimeout: account service did not respond for CUST-2008
+trace=25a7175e7c164dce tool.get_account_state: UpstreamTimeout: account service did not respond for CUST-2008
+EV-035 PASS answer                     30620 ms  
+trace=e84a1e1232ac482b llm:unavailable-primary: HTTPStatusError: Client error '404 Not Found' for url 'http://localhost:11434/api/chat'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+trace=e84a1e1232ac482b llm:unavailable-fallback: HTTPStatusError: Client error '404 Not Found' for url 'http://localhost:11434/api/chat'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+trace=e84a1e1232ac482b llm: LLMUnavailable: all models failed: ['unavailable-primary', 'unavailable-fallback']
+EV-036 PASS temporarily_unavailable     4949 ms  
+
+pass rate 32/36 = 88.9%
